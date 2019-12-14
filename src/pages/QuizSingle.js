@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams, useRouteMatch } from "react-router-dom";
 import Quiz from "../components/Quiz/Quiz";
 import { secondBaseman1 } from "../data/second-baseman-scenarios-1";
-import { quiz2 } from "../data/quiz";
+import { shortStop1 } from "../data/shortstop-scenarios-1";
 
 export default function QuizSingle() {
   let { url } = useRouteMatch();
@@ -28,6 +28,6 @@ export default function QuizSingle() {
 }
 
 const Quizzes = [
-  { id: 0, quiz: quiz2 },
-  { id: 1, quiz: secondBaseman1 }
+  { id: 1, quiz: secondBaseman1 },
+  { id: 2, quiz: shortStop1 }
 ];
