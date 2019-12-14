@@ -1,19 +1,41 @@
 import React from "react";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import ReactDOM from "react-dom";
-import Quiz from "./components/Quiz/Quiz";
-import { quiz } from "./data/quiz";
-import { quiz2 } from "./data/quiz2";
+import { ThemeProvider, ColorModeProvider, theme } from "@chakra-ui/core";
+import QuizIndex from "./pages/QuizIndex";
+import QuizSingle from "./pages/QuizSingle";
+import Header from "./components/Header/Header";
+import { CSSReset } from "@chakra-ui/core";
+
+import Home from "./pages/Home";
 
 import "./index.css";
 
 import * as serviceWorker from "./serviceWorker";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <Quiz quiz={quiz} />
-      {/* <Quiz quiz={quiz2} /> */}
-    </div>
+    <ThemeProvider theme={theme}>
+      <ColorModeProvider>
+        <CSSReset />
+        <Router>
+          <div className="App">
+            <Header />
+            <Switch>
+              <Route exact path="/">
+                <Home />
+              </Route>
+              <Route path="/quizzes">
+                <QuizIndex />
+              </Route>
+              <Route path="/quiz/:id/:slug">
+                <QuizSingle />
+              </Route>
+            </Switch>
+          </div>
+        </Router>
+      </ColorModeProvider>
+    </ThemeProvider>
   );
 }
 

@@ -426,7 +426,7 @@ class Core extends Component {
     return (
       <div className="questionWrapper">
         {!endQuiz && (
-          <div>
+          <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-around", alignItems: "center" }}>
             <div className="questionWrapperBody">
               <div className="questionModal">
                 {incorrectAnswer && showInstantFeedback && (

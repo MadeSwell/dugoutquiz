@@ -4,7 +4,7 @@ function Field({ focus, outs, runners }) {
   return (
     <div className="perspective">
       <div className="field stripes">
-        {outs && <div className="outs">OUT: {outs}</div>}
+        {outs !== "" && <div className="outs">OUT: {outs}</div>}
         <div className={`circle left-field ${focus === "7" ? "pulse focus" : "yellow"}`} />
         <div className={`circle left-center ${focus === "8" ? "pulse focus" : "yellow"}`} />
         <div className={`circle right-center ${focus === "9" ? "pulse focus" : "yellow"}`} />
