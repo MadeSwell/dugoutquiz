@@ -12,11 +12,18 @@ export default function QuizSingle() {
 
   async function currentQuiz() {
     const theQuiz = await Quizzes.filter(quiz => quiz.id === id);
-    setQuiz(secondBaseman1);
+    setQuiz(theQuiz);
   }
 
   useEffect(() => {
-    setQuiz(secondBaseman1);
+    if (id == 1) {
+      setQuiz(secondBaseman1);
+    }
+
+    if (id == 2) {
+      setQuiz(shortStop1);
+    }
+
     console.log(quiz);
   }, [quiz]);
 

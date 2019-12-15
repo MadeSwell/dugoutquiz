@@ -5,6 +5,7 @@ import { Card } from "../components/Card/Card";
 import { Layout } from "../components/Layout/Layout";
 import { Link } from "react-router-dom";
 import secondBase from "../img/second-base.jpg";
+import shortStop from "../img/baseball-in-dirt.jpg";
 
 export default function Home() {
   return (
@@ -17,7 +18,7 @@ export default function Home() {
           <Card imageUrl={secondBase} title="Second Basemen Scenarios" />
         </Link>
         <Link to="/quiz/2/shortstop-scenarios">
-          <Card imageUrl={secondBase} title="Second Basemen Scenarios" />
+          <Card imageUrl={shortStop} title="Shortstop Scenarios" />
         </Link>
       </Flex>
     </Layout>

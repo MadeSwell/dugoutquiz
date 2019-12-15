@@ -12,7 +12,7 @@ export const Card = ({ imageUrl, imageAlt, outs, runners, title, tryCount }) => 
   };
 
   return (
-    <Box maxW="sm" borderWidth="1px" rounded="lg" overflow="hidden" minW="sm" mr="4" mb="4">
+    <Box maxW="sm" borderWidth="1px" rounded="lg" overflow="hidden" mr="4" mb="4">
       <Image src={property.imageUrl} alt={property.imageAlt} />
 
       <Box p="6">

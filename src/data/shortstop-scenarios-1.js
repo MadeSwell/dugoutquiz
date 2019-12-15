@@ -11,7 +11,7 @@ export const shortStop1 = {
       showField: true,
       field: {
         outs: 0,
-        focus: "4",
+        focus: "6",
         runners: {
           first: false,
           second: false,
@@ -38,7 +38,7 @@ export const shortStop1 = {
       showField: true,
       field: {
         outs: 0,
-        focus: "4",
+        focus: "6",
         runners: {
           first: false,
           second: false,
@@ -61,7 +61,7 @@ export const shortStop1 = {
       showField: true,
       field: {
         outs: 0,
-        focus: "4",
+        focus: "6",
         runners: {
           first: false,
           second: false,
@@ -85,7 +85,7 @@ export const shortStop1 = {
       showField: true,
       field: {
         outs: 0,
-        focus: "4",
+        focus: "6",
         runners: {
           first: true,
           second: false,
@@ -107,7 +107,7 @@ export const shortStop1 = {
       showField: true,
       field: {
         outs: 0,
-        focus: "4",
+        focus: "6",
         runners: {
           first: true,
           second: false,
@@ -126,7 +126,7 @@ export const shortStop1 = {
       showField: true,
       field: {
         outs: 2,
-        focus: "4",
+        focus: "6",
         runners: {
           first: true,
           second: true,
